@@ -31,9 +31,10 @@ body{
   background:rgba(243,243,239,0.55);
   backdrop-filter:blur(18px);
   -webkit-backdrop-filter:blur(12px);
-  padding:40px;
+  padding:100px 50px 50px 50px;
   border-radius:24px;
   color:#333;
+  position:relative;
 }
 
 .title{
@@ -42,25 +43,38 @@ body{
   letter-spacing:0.08em;
   margin-bottom:0.5em;
   text-align:center;
+  font-size:4rem;
+  position:absolute;
+  top:-55px;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
 }
 
+.menu{
+  font-family:"Cactus Classical Serif", serif;
+  font-weight:700;
+  font-size:2rem;
+  text-decoration:none;
+  color:#333;
+  line-height:2.2;
+  margin-left:40px;
+}
+  
+.chinesetitle{
+  font-family:"Cactus Classical Serif", serif;
+  font-weight:400;
+  text-align:center;
+  margin-top:80px;
+  margin-bottom:8px;
+}
+  
 .englishtitle{
   font-family:"LXGW WenKai TC", cursive;
   font-weight:400;
   font-style:italic;
   text-align:center;
-  margin-bottom:2em;
-}
-
-.chinese{
-  font-family:"Cactus Classical Serif", serif;
-  font-weight:400;
-}
-.chinesetitle{
-  font-family:"Cactus Classical Serif", serif;
-  font-weight:400;
-  text-align:center;
-  margin-bottom:2em;
+  margin-top:0;
 }
 
 h1{
@@ -84,14 +98,16 @@ a:hover{
 <div class="content"> 
   
 <h1 class="title">little and not more</h1>
-<p class="chinese"><a href="photography.html">一些照片</a></p>
-<p class="chinese"><a href="forest.html">一些字</a></p>
-<p class="chinese"><a href="letters.html">電子報</a></p>
-<p class="chinese"><a href="about.html">關於這裡</a></p>  
+ 
+<div class="menu">
+<p><a href="photography.html">一些照片</a></p>
+<p><a href="forest.html">一些字</a></p>
+<p><a href="letters.html">電子報</a></p>
+<p><a href="about.html">關於這裡</a></p>
 <br>
+</div>
   
 <p class="chinesetitle">我有時候話很多。</p>
-  
 <p class="englishtitle">A collection of photographs, forest notes, and letters.</p>
 
 </div>
